@@ -82,6 +82,8 @@ namespace MirraGames.SDK.AdMob
 
         protected override void InvokeRewardedImpl(RewardedParameters parameters, Action onOpen, Action<bool> onClose)
         {
+            OnRewardedOpen = onOpen;
+            OnRewardedClose = onClose;
             if (rewardedAd != null && rewardedAd.CanShowAd())
             {
                 Logger.CreateText(this, "Showing rewarded ad.");
