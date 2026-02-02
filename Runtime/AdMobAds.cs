@@ -84,6 +84,7 @@ namespace MirraGames.SDK.AdMob
         {
             OnRewardedOpen = onOpen;
             OnRewardedClose = onClose;
+            IsRewardedSuccess = false;
             if (rewardedAd != null && rewardedAd.CanShowAd())
             {
                 Logger.CreateText(this, "Showing rewarded ad.");
