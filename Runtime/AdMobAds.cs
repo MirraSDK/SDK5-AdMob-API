@@ -104,6 +104,7 @@ namespace MirraGames.SDK.AdMob
         /// </summary>
         private void OnMobileAdsInitialized(InitializationStatus initStatus)
         {
+            SetInitialized();
             LoadInterstitialAd();
             LoadRewardedAd();
         }
